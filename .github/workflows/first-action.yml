@@ -20,5 +20,8 @@ jobs:
         run: echo "Hello World!"
         
       - name: Print goodbye
-        run: echo "Done - bye!"
+        # To execute multiple shell commands, add a pipe symbol (|) as a value after the "run" keyword.
+        run: |
+            echo "Done - bye!"
+            echo "See you later!"
     
