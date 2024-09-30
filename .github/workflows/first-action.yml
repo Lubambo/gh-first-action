@@ -1,0 +1,24 @@
+# Naming the workflow.
+name: First Workflow
+
+# Defining when this workflow will be executed.
+on: workflow_dispatch
+
+# Defining the work that will be done, that is all the jobs that will be executed in this workflow.
+jobs:
+  # Defining a job.
+  first-job:
+    # Defining the environment that will be used by this job.
+    runs-on: ubuntu-latest
+    # Defining the steps, that is the operations, the job will execute.
+    steps:
+      # Definins a step.
+      # Every step defined must start with a dash "-".
+        # name keyword labels the step, making it easier to understand that step purpose.
+      - name: Print greeting
+        # run keyword define what will be executed in the command line
+        run: echo "Hello World!"
+        
+      - name: Print goodbye
+        run: echo "Done - bye!"
+    
